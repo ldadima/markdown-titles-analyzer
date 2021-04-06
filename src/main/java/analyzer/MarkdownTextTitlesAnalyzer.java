@@ -63,7 +63,8 @@ public class MarkdownTextTitlesAnalyzer implements TextTitlesAnalyzer {
 
     @Override
     public String getFullText() {
-        return getTableOfContents() + "\n" + text;
+        String table = getTableOfContents();
+        return table + (table.isEmpty() ? "" : "\n") + text;
     }
 }
 
