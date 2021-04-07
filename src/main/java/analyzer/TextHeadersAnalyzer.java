@@ -2,7 +2,7 @@ package analyzer;
 
 import java.util.Scanner;
 
-public interface TextTitlesAnalyzer {
+public interface TextHeadersAnalyzer {
 
     void analyzeText(Scanner text);
 

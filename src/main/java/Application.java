@@ -1,5 +1,5 @@
-import analyzer.MarkdownTextTitlesAnalyzer;
-import analyzer.TextTitlesAnalyzer;
+import analyzer.MarkdownTextHeadersAnalyzer;
+import analyzer.TextHeadersAnalyzer;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Application {
     public static void main(String[] args) {
-        TextTitlesAnalyzer analyzer = new MarkdownTextTitlesAnalyzer();
+        TextHeadersAnalyzer analyzer = new MarkdownTextHeadersAnalyzer();
         try {
             analyzer.analyzeText(new Scanner(new File(args[0])));
             System.out.println(analyzer.getFullText());

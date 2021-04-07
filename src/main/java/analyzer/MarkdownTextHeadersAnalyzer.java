@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
-public class MarkdownTextTitlesAnalyzer implements TextTitlesAnalyzer {
+public class MarkdownTextHeadersAnalyzer implements TextHeadersAnalyzer {
 
     private String text;
     private final List<Title> titles = new ArrayList<>();

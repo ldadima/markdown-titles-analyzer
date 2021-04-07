@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MarkdownAnalyzerTest {
 
-    private final TextTitlesAnalyzer analyzer = new MarkdownTextTitlesAnalyzer();
+    private final TextHeadersAnalyzer analyzer = new MarkdownTextHeadersAnalyzer();
 
     @ParameterizedTest
     @EnumSource(MarkdownTests.class)
